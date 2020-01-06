@@ -1,0 +1,196 @@
+body,
+ul {
+    margin: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', 'Arial';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.header {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 2px 0 rgba(40, 42, 49, .16);
+    z-index: 999;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.header .logo {
+    width: 288px;
+    height: 72px;
+    background-image: linear-gradient(100deg, #1c5de7, #1c91e7);
+    color: #fff;
+    line-height: 72px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header .logo i {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .info {
+    margin-left: 288px;
+    height: 72px;
+}
+
+.header .info .profile {
+    width: 160px;
+    height: 72px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.header .info .profile .btn {
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    text-align: right;
+    padding-right: 26px;
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    top: 72px;
+    right: 0;
+    bottom: 0;
+}
+
+.aside {
+    width: 288px;
+    height: 100%;
+    background: #18202e;
+    overflow-y: auto;
+    position: relative;
+}
+
+.aside .cprt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #1d2432;
+    color: #fff;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu .item {
+    display: block;
+    padding: 15px 20px 15px 30px;
+    position: relative;
+    color: #919bae;
+}
+
+.menu .item .glyphicon {
+    margin-right: 8px;
+}
+
+.menu .active {
+    color: #FFF;
+}
+
+.menu .active::before,
+.menu .item:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-left: 4px solid #1c5de7;
+}
+
+.menu .item:hover {
+    background: rgba(80, 80, 80, .1);
+}
+
+.main {
+    margin-left: 288px;
+    height: 100%;
+    background: #fafafb;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.main .title {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main .title h4 {
+    font-size: 22px;
+    color: #111;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+}
+
+.main .title span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #787e8f;
+}
+
+.main .title .new {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.main .custom-table {
+    background: #fff;
+}
+
+.main .custom-table .glyphicon {
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.main .pagination {
+    margin: 0;
+}
+
+.tips {
+    margin-top: 20px;
+    background: #f2dede;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.tips:empty {
+    display: none;
+}

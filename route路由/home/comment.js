@@ -1,0 +1,14 @@
+//导入评论集合构造函数
+const { Comment } = require('../../model数据库/comment');
+module.exports = async(req, res) => {
+    const { content, uid, aid } = req.body;
+    //将评论信息存储在评论集合中
+    await Comment.create({
+        content: content,
+        uid: uid,
+        aid: aid,
+        time: new Date()
+    });
+    //将页面重定向到文章详情页面
+    res.redirect('/home/article?id=' + aid);
+}

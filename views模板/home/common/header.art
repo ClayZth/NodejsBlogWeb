@@ -1,0 +1,21 @@
+<!-- 头部框架开始 -->
+<div class="header">
+    <div class="w1100">
+        <!-- logo开始-->
+        <h1 class="logo fl">
+            <a href="/home"><img src="images/logo.png" alt="Clay"></a>
+        </h1>
+        <!-- logo结束 -->
+        <!-- 导航开始 -->
+        <ul class="navigation fr">
+            <li>
+                <a href="/home" class="active">首页</a>
+            </li>
+            <li>
+                <a href="/admin/login">登录</a>
+            </li>
+        </ul>
+        <!-- 导航结束 -->
+    </div>
+</div>
+<!-- 头部框架结束 -->
